@@ -41,10 +41,10 @@ object Job {
         csv.getStockCode(CsvLtl.csv_watch_target).foreach{code => {
             val outList = sc.getDailyStock(code, startDay);
             csv.outCsv(outList, CsvLtl.csv_daily_stock + code + ".csv");
-
-            csv.underLineAlertCsv();
           }
         }
+        // 上がるやつを収集
+        csv.underLineAlertCsv();
       }
 
       case "span" => {
@@ -61,7 +61,5 @@ object Job {
       }
       case _ => println("arg error");
     }
-
-
   }
 }

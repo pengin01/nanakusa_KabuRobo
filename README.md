@@ -8,4 +8,4 @@
 1. `sbt "run mk_mst_cp_inf"`<=すごく時間がかかる
 1. `sbt "run mk_watch_tgt"`
 1. `sbt "run al_today 2017/9/12"`
-1. `nanakusa_KabuRobo/csv`に近々株価が上がる可能性がある証券コードが吐かれるよ（対象がない場合は空のファイル）
+1. `nanakusa_KabuRobo/csv/alert_stock_code.csv`に近々株価が上がる可能性がある証券コードが吐かれるよ（対象がない場合は空のファイル）

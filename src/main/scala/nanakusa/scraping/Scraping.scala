@@ -106,6 +106,7 @@ class Scraping {
           val ed_value = cov_num_func(sp_value(4));
 
           val under_line = if(st_value < ed_value) mini_value.toDouble / st_value.toDouble else mini_value.toDouble / ed_value.toDouble
+          println(List(code, get_day, st_value ,max_value ,mini_value ,ed_value ,under_line.toString));
           res += List(code, get_day, st_value ,max_value ,mini_value ,ed_value ,under_line.toString);
         }
       }
